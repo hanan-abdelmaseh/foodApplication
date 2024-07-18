@@ -20,7 +20,7 @@ export class GlobalInterceptor implements HttpInterceptor {
       const token=localStorage.getItem('token')
 
       let req =request.clone({
-        url:baseUrl+request.url,
+        url: request.url.includes('assets')? request.url: baseUrl + request.url,
         setHeaders:{
           'Authorization':`${token}`
         }
