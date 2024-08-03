@@ -74,7 +74,7 @@ input{
         border-right: .5px solid #8391A1;
 
     }
-    input{
+    .form-control{
         background-color: transparent;
         border: none;
 
